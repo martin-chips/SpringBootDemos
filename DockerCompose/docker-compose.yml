@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  webapp:
+    build: .
+    platform: linux/amd64
+    image: webapp
+    depends_on:
+      - redis
+    ports:
+      - "8080:8080"
+  redis:
+    image: redis:alpine
