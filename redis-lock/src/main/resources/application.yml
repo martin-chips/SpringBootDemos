@@ -1,0 +1,7 @@
+spring:
+  redis:
+    host: dimple-redis
+    database: 0
+    password: password
+    connect-timeout: 5s
+
